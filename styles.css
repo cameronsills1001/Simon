@@ -1,0 +1,169 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #e9ef08;
+  text-shadow: 2px 2px #ff6500;
+}
+
+.max-level {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #e9ef08;
+  margin: 10px;
+  text-shadow: 1px 1px #ff6500;
+}
+
+.keys {
+  margin-top: 100px;
+  padding: 40px;
+  background-color: #041138;
+  border-radius: 20px;
+  width: 650px;
+}
+
+.big-x {
+  background-image: url('images/big-x.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.key {
+  width: 200px;
+  height: 80px;
+  border: 3px solid black;
+  border-radius: 50px 50px 10px 10px;
+}
+
+.key:focus {
+  outline: none;
+}
+
+.green {
+  background-color: #3d8224;
+  margin-bottom: 70px;
+}
+
+.red {
+  transform: rotate(270deg);
+  background-color: #b01f1b;
+}
+
+.yellow {
+  transform: rotate(90deg);
+  background-color: #cada23;
+}
+
+.blue {
+  margin-top: 70px;
+  transform: rotate(180deg);
+  background-color: #1e3f91;
+}
+
+.bright-green {
+  background-color: #02fd38;
+  box-shadow: 0px 0px 30px 10px #02fd38;
+}
+
+.bright-red {
+  background-color: #ff0000;
+  box-shadow: 0px 0px 30px 10px #ff0000;
+}
+
+.bright-yellow {
+  background-color: #e9ff00;
+  box-shadow: 0px 0px 30px 10px #e9ff00;
+}
+
+.bright-blue {
+  background-color: #6994fe;
+  box-shadow: 0px 0px 30px 10px #6994fe;
+}
+
+/* Media Queries */
+@media(max-width: 1370px){
+  #level-title {
+    font-size: 2rem;
+    margin: 30px 0 0 0;
+  }
+
+  .keys {
+    margin-top: 50px;
+    padding: 20px;
+    width: 500px;
+  }
+
+  .key {
+    width: 150px;
+    height: 50px;
+  }
+}
+
+@media(max-width: 600px) {
+  #level-title {
+    font-size: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    top: 40px;
+  }
+
+
+  .keys {
+    width: 75%;
+    margin-top: 50%
+  }
+
+  .col-xs-6 {
+    width: 50%;
+    padding: 0;
+  }
+
+  .tb-col {
+    padding: 0;
+  }
+
+  .key {
+    width: 130px;
+    height: 50px;
+  }
+
+  .green {
+    margin-bottom: 40px;
+  }
+
+  .blue {
+    margin-top: 40px;
+  }
+
+  .red {}
+}
+
+.big-x {
+  background-size: 20%;
+}
+
+@media(max-width: 550px) {
+  .key {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media(max-width:460px) {
+  .keys {
+    width: 100%;
+  }
+}
+
+@media(max-width: 250px) {
+  .keys {
+    margin-top: 40%;
+    padding: 0;
+  }
+}
